@@ -18,6 +18,8 @@
 		05B1EB8323FD65CB00277B63 /* BeerListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B1EB8123FD65CB00277B63 /* BeerListViewCell.swift */; };
 		05B1EB8423FD65CB00277B63 /* BeerListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05B1EB8223FD65CB00277B63 /* BeerListViewCell.xib */; };
 		05B1EB8623FD686D00277B63 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B1EB8523FD686D00277B63 /* UITableViewCellExtension.swift */; };
+		7C59B1A8AC841BF27D50DCDB /* Pods_PunkIPATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C8AEE651352B53544A574E /* Pods_PunkIPATests.framework */; };
+		AC772E21096EFAF2BB83BDDE /* Pods_PunkIPA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBA18FB237B04C2069B8C34 /* Pods_PunkIPA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,12 @@
 		05B1EB8123FD65CB00277B63 /* BeerListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewCell.swift; sourceTree = "<group>"; };
 		05B1EB8223FD65CB00277B63 /* BeerListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerListViewCell.xib; sourceTree = "<group>"; };
 		05B1EB8523FD686D00277B63 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		1048743BE8BC92C2B3FE83C0 /* Pods-PunkIPA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkIPA.debug.xcconfig"; path = "Target Support Files/Pods-PunkIPA/Pods-PunkIPA.debug.xcconfig"; sourceTree = "<group>"; };
+		2C9BC7FAE2092BDD7AADDA2E /* Pods-PunkIPATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkIPATests.release.xcconfig"; path = "Target Support Files/Pods-PunkIPATests/Pods-PunkIPATests.release.xcconfig"; sourceTree = "<group>"; };
+		2EA0628CEB7CA62980D3C691 /* Pods-PunkIPATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkIPATests.debug.xcconfig"; path = "Target Support Files/Pods-PunkIPATests/Pods-PunkIPATests.debug.xcconfig"; sourceTree = "<group>"; };
+		59C8AEE651352B53544A574E /* Pods_PunkIPATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkIPATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFF39446502360A37DF426F /* Pods-PunkIPA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkIPA.release.xcconfig"; path = "Target Support Files/Pods-PunkIPA/Pods-PunkIPA.release.xcconfig"; sourceTree = "<group>"; };
+		EDBA18FB237B04C2069B8C34 /* Pods_PunkIPA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkIPA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC772E21096EFAF2BB83BDDE /* Pods_PunkIPA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C59B1A8AC841BF27D50DCDB /* Pods_PunkIPATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,8 @@
 				05B1EB6523FD64C600277B63 /* PunkIPATests */,
 				05B1EB7023FD64C600277B63 /* PunkIPAUITests */,
 				05B1EB4D23FD64C300277B63 /* Products */,
+				D04C2855C41F82491930C7FB /* Pods */,
+				CC7C8F5B26864BAAD6194CA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +149,27 @@
 			path = PunkIPAUITests;
 			sourceTree = "<group>";
 		};
+		CC7C8F5B26864BAAD6194CA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDBA18FB237B04C2069B8C34 /* Pods_PunkIPA.framework */,
+				59C8AEE651352B53544A574E /* Pods_PunkIPATests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D04C2855C41F82491930C7FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1048743BE8BC92C2B3FE83C0 /* Pods-PunkIPA.debug.xcconfig */,
+				AEFF39446502360A37DF426F /* Pods-PunkIPA.release.xcconfig */,
+				2EA0628CEB7CA62980D3C691 /* Pods-PunkIPATests.debug.xcconfig */,
+				2C9BC7FAE2092BDD7AADDA2E /* Pods-PunkIPATests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05B1EB7623FD64C600277B63 /* Build configuration list for PBXNativeTarget "PunkIPA" */;
 			buildPhases = (
+				8D790756F2B4B5A38DED289A /* [CP] Check Pods Manifest.lock */,
 				05B1EB4823FD64C300277B63 /* Sources */,
 				05B1EB4923FD64C300277B63 /* Frameworks */,
 				05B1EB4A23FD64C300277B63 /* Resources */,
+				515444011D7153568015DF5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05B1EB7923FD64C600277B63 /* Build configuration list for PBXNativeTarget "PunkIPATests" */;
 			buildPhases = (
+				0A0459EF10615B70057F70C1 /* [CP] Check Pods Manifest.lock */,
 				05B1EB5E23FD64C600277B63 /* Sources */,
 				05B1EB5F23FD64C600277B63 /* Frameworks */,
 				05B1EB6023FD64C600277B63 /* Resources */,
+				3E3FC7120502B8F8FFED32A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +300,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A0459EF10615B70057F70C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PunkIPATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E3FC7120502B8F8FFED32A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunkIPATests/Pods-PunkIPATests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunkIPATests/Pods-PunkIPATests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PunkIPATests/Pods-PunkIPATests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		515444011D7153568015DF5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunkIPA/Pods-PunkIPA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunkIPA/Pods-PunkIPA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PunkIPA/Pods-PunkIPA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D790756F2B4B5A38DED289A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PunkIPA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05B1EB4823FD64C300277B63 /* Sources */ = {
@@ -444,6 +562,7 @@
 		};
 		05B1EB7723FD64C600277B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1048743BE8BC92C2B3FE83C0 /* Pods-PunkIPA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +581,7 @@
 		};
 		05B1EB7823FD64C600277B63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEFF39446502360A37DF426F /* Pods-PunkIPA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +600,7 @@
 		};
 		05B1EB7A23FD64C600277B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA0628CEB7CA62980D3C691 /* Pods-PunkIPATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +623,7 @@
 		};
 		05B1EB7B23FD64C600277B63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9BC7FAE2092BDD7AADDA2E /* Pods-PunkIPATests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
