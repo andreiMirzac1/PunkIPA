@@ -15,6 +15,9 @@
 		05B1EB5C23FD64C600277B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B1EB5A23FD64C600277B63 /* LaunchScreen.storyboard */; };
 		05B1EB6723FD64C600277B63 /* PunkIPATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B1EB6623FD64C600277B63 /* PunkIPATests.swift */; };
 		05B1EB7223FD64C600277B63 /* PunkIPAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B1EB7123FD64C600277B63 /* PunkIPAUITests.swift */; };
+		05B1EB8323FD65CB00277B63 /* BeerListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B1EB8123FD65CB00277B63 /* BeerListViewCell.swift */; };
+		05B1EB8423FD65CB00277B63 /* BeerListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05B1EB8223FD65CB00277B63 /* BeerListViewCell.xib */; };
+		05B1EB8623FD686D00277B63 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B1EB8523FD686D00277B63 /* UITableViewCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		05B1EB6D23FD64C600277B63 /* PunkIPAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkIPAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B1EB7123FD64C600277B63 /* PunkIPAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkIPAUITests.swift; sourceTree = "<group>"; };
 		05B1EB7323FD64C600277B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B1EB8123FD65CB00277B63 /* BeerListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewCell.swift; sourceTree = "<group>"; };
+		05B1EB8223FD65CB00277B63 /* BeerListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerListViewCell.xib; sourceTree = "<group>"; };
+		05B1EB8523FD686D00277B63 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		05B1EB4E23FD64C300277B63 /* PunkIPA */ = {
 			isa = PBXGroup;
 			children = (
+				05B1EB8123FD65CB00277B63 /* BeerListViewCell.swift */,
+				05B1EB8523FD686D00277B63 /* UITableViewCellExtension.swift */,
+				05B1EB8223FD65CB00277B63 /* BeerListViewCell.xib */,
 				05B1EB4F23FD64C300277B63 /* AppDelegate.swift */,
 				05B1EB5123FD64C300277B63 /* SceneDelegate.swift */,
 				05B1EB5323FD64C300277B63 /* ViewController.swift */,
@@ -234,6 +243,7 @@
 			files = (
 				05B1EB5C23FD64C600277B63 /* LaunchScreen.storyboard in Resources */,
 				05B1EB5923FD64C600277B63 /* Assets.xcassets in Resources */,
+				05B1EB8423FD65CB00277B63 /* BeerListViewCell.xib in Resources */,
 				05B1EB5723FD64C300277B63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +271,8 @@
 			files = (
 				05B1EB5423FD64C300277B63 /* ViewController.swift in Sources */,
 				05B1EB5023FD64C300277B63 /* AppDelegate.swift in Sources */,
+				05B1EB8623FD686D00277B63 /* UITableViewCellExtension.swift in Sources */,
+				05B1EB8323FD65CB00277B63 /* BeerListViewCell.swift in Sources */,
 				05B1EB5223FD64C300277B63 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
