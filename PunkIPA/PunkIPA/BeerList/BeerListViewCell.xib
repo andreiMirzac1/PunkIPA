@@ -51,6 +51,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="abvLabel" destination="jF0-bt-Rvs" id="LI8-ZA-0aA"/>
+                <outlet property="beerImageView" destination="Poc-yQ-1MZ" id="CMF-c0-0kp"/>
+                <outlet property="nameLabel" destination="aUF-gc-47X" id="Cnz-kL-FYx"/>
+            </connections>
             <point key="canvasLocation" x="202.89855072463769" y="153.34821428571428"/>
         </tableViewCell>
     </objects>
