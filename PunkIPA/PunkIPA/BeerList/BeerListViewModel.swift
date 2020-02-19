@@ -13,11 +13,12 @@ import RxCocoa
 class BeerListViewModel {
 
   private let disposeBag = DisposeBag()
-  let beers: PublishSubject<[Beer]> = PublishSubject()
+  let beers: BehaviorRelay<[Beer]> = BehaviorRelay(value: [])
 
   init(networkService: NetworkService, resource: Resource<[Beer]>) {
     networkService.load(resource).subscribe(onNext: { [weak self] beers in
-      self?.beers.onNext(beers)
+      self?.beers.accept(beers)
     }).disposed(by: disposeBag)
   }
+
 }

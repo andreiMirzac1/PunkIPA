@@ -45,12 +45,17 @@ class BeerListViewController: UIViewController {
       .subscribeOn(MainScheduler.instance)
       .bind(to: tableView.rx.items(cellIdentifier: BeerListViewCell.reuseIdentifier, cellType: BeerListViewCell.self)) { (row, beer, cell) in
         cell.setUp(beer: beer)
+        cell.selectionStyle = .none
     }.disposed(by: disposeBag)
   }
 }
 
 extension BeerListViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let beer = viewModel.beers.value[indexPath.row]
+    let viewModel = BeerDetailViewModel(beer: beer)
+    let viewController = BeerDetailViewController(viewModel: viewModel)
+    present(viewController, animated: true)
   }
 }
 

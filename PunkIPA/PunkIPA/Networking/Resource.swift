@@ -1,6 +1,6 @@
 //
 //  Resource.swift
-//  Recipes
+//  Beers
 //
 //  Created by Andrei Mirzac on 14/06/2018.
 //  Copyright © 2018 Andrei Mirzac. All rights reserved.
@@ -26,7 +26,7 @@ struct Resource<A> {
     }
 }
 
-extension Resource where A: Codable {
+extension Resource where A: Decodable {
     init(url: String, method: HttpMethod = .get) {
         self.url = url
         self.method = method

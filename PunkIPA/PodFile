@@ -4,6 +4,7 @@ target 'PunkIPA' do
     pod 'Kingfisher'
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
+    pod 'AnyCodable-FlightSchool', '~> 0.2.3'
 end
 
 target 'PunkIPATests' do

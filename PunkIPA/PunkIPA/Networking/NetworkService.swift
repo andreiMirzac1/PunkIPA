@@ -1,6 +1,6 @@
 //
 //  NetworkService.swift
-//  Recipes
+//  Beers
 //
 //  Created by Andrei Mirzac on 14/06/2018.
 //  Copyright © 2018 Andrei Mirzac. All rights reserved.
@@ -16,7 +16,7 @@ class NetworkService {
       case invalidStatusCode
   }
 
-  public func load<A: Codable>(_ resource: Resource<A>) -> Observable<A> {
+  public func load<A: Decodable>(_ resource: Resource<A>) -> Observable<A> {
 
     return Observable<A>.create { observer in
       let url = URL(string: resource.url)!
