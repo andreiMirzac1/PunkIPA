@@ -1,5 +1,5 @@
 //
-//  Ingredient.swift
+//  Hop.swift
 //  PunkIPA
 //
 //  Created by Andrei Mirzac on 05/05/2020.
@@ -8,7 +8,9 @@
 
 import Foundation
 
-protocol Ingredient {
-    var name: String {  get }
-    var amount: BoilVolume { get }
+// MARK: - Hop
+struct Hop: Codable, Ingredient {
+    let name: String
+    let amount: BoilVolume
+    let add, attribute: String
 }

@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Amount: Codable {
-  let value: Double
-  let unit: String
+// MARK: - BoilVolume
+struct BoilVolume: Codable {
+    let value: Double
+    let unit: String
 }

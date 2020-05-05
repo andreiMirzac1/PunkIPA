@@ -1,5 +1,5 @@
 //
-//  Ingredient.swift
+//  Malt.swift
 //  PunkIPA
 //
 //  Created by Andrei Mirzac on 05/05/2020.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-protocol Ingredient {
-    var name: String {  get }
-    var amount: BoilVolume { get }
+// MARK: - Malt
+struct Malt: Codable, Ingredient {
+    let name: String
+    let amount: BoilVolume
 }

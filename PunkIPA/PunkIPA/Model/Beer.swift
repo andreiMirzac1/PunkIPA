@@ -14,8 +14,7 @@ struct Beer: Decodable {
   let abv: Double
   let imageUrl: String
   let description: String
-  let maltIngredients: [Ingredient]
-  let hopsIngredients: [Ingredient]
+  let ingredients: Ingredients
 
   enum CodingKeys: String, CodingKey {
     case id
@@ -33,20 +32,8 @@ struct Beer: Decodable {
     name = try container.decode(String.self, forKey: .name)
     imageUrl = try container.decode(String.self, forKey: .imageUrl)
     description = try container.decode(String.self, forKey: .description)
-
-    let dictionary = try container.decode([String: AnyCodable].self, forKey: .ingredients)
-
-    if let maltIngredients = dictionary["malt"]?.value as? [[String: Any]] {
-      self.maltIngredients = try maltIngredients.compactMap({ try Ingredient(dict: $0) })
-    } else {
-      self.maltIngredients = []
-    }
-
-    if let hopsIngredients = dictionary["hops"]?.value as? [[String: Any]] {
-      self.hopsIngredients = try hopsIngredients.compactMap({ try Ingredient(dict: $0) })
-    } else {
-      self.hopsIngredients = []
-    }
+    ingredients = try container.decode(Ingredients.self, forKey: .ingredients)
   }
 }
+
 

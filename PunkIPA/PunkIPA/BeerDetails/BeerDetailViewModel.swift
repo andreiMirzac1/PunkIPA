@@ -14,9 +14,10 @@ class BeerDetailViewModel {
   let content: [SectionContent]
 
   init(beer: Beer) {
-    self.content = [SectionContent.image(beer.imageUrl, title: beer.name, description: beer.description),
-                    SectionContent.ingredients(beer.maltIngredients, sectionTitle: "Malt"),
-                    SectionContent.ingredients(beer.hopsIngredients, sectionTitle: "Hops")]
+
+    content = [SectionContent.image(beer.imageUrl, title: beer.name, description: beer.description),
+               SectionContent.ingredients(beer.ingredients.malt, sectionTitle: "Malt"),
+               SectionContent.ingredients(beer.ingredients.hops, sectionTitle: "Hops")]
   }
 
   func sectionTitle(for index: Int) -> String? {
